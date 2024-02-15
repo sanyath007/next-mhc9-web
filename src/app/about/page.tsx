@@ -1,11 +1,10 @@
-import Image from "next/image";
 
-export default function Home() {
+export default function About() {
     return (
         <section className="w-full">
             <div className="container">
-                <h1>Home Page</h1>
+                <h1>About Page</h1>
             </div>
         </section>
-    );
+    )
 }

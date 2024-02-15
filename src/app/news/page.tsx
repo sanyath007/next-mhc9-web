@@ -1,13 +1,13 @@
 import Image from "next/image";
 
-export default async function Dashboard() {
+export default async function News() {
     const res = await fetch(`${process.env.WEB_API_URL}/api/posts?cate=2`, { method: 'GET' });
     const posts = await res.json();
 
     return (
-        <section>
+        <section className="w-full">
             <div className="container">
-                <h1>Dashboard Page</h1>
+                <h1>News Page</h1>
 
                 <div className="row">
                     {posts && posts.data.map((post: any, index: number) => (
