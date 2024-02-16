@@ -18,16 +18,18 @@ const page: FC<PageProps> = async ({ params }) => {
 
                 <div className="row mt-4">
                     {posts && posts.data.map((post: any, index: number) => (
-                        <div key={post.id} className="col-md-3">
+                        <div key={post.id} className="col-md-4">
                             <div className="card mb-4">
                                 {post.featured ? (
-                                    <Image
-                                        src={`${process.env.UPLOAD_URL}/${post.featured}`}
-                                        alt="featured"
-                                        width={200}
-                                        height={80}
-                                        className="card-img-top"
-                                    />
+                                    <div className="card-img-top overflow-hidden">
+                                        <Image
+                                            src={`${process.env.UPLOAD_URL}/${post.featured}`}
+                                            alt="featured"
+                                            width={100}
+                                            height={100}
+                                            className="w-full h-[220px]"
+                                        />
+                                    </div>
                                 ) : (
                                     <div className="card-img-top flex justify-center py-4">
                                         <Image
@@ -38,8 +40,8 @@ const page: FC<PageProps> = async ({ params }) => {
                                         />
                                     </div>
                                 )}
-                                <div className="card-body">
-                                    <h3>{post.title}</h3>
+                                <div className="card-body h-[10rem]">
+                                    <h4 className="text-base font-light">{post.title}</h4>
                                 </div>
                             </div>
                         </div>
