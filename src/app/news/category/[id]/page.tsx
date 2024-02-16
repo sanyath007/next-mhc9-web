@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface PageProps {
     params: {
@@ -41,7 +42,9 @@ const page: FC<PageProps> = async ({ params }) => {
                                     </div>
                                 )}
                                 <div className="card-body h-[10rem]">
-                                    <h4 className="text-base font-light">{post.title}</h4>
+                                    <Link href={`/news/${post.id}`}>
+                                        <h4 className="text-base font-light">{post.title}</h4>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
