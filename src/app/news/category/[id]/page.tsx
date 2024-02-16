@@ -17,6 +17,8 @@ const page: FC<PageProps> = async ({ params }) => {
             <div className="container">
                 <h1 className="text-2xl font-bold">News Category Page</h1>
 
+                <hr className="mt-2" />
+
                 <div className="row mt-4">
                     {posts && posts.data.map((post: any, index: number) => (
                         <div key={post.id} className="col-md-4">
@@ -26,8 +28,8 @@ const page: FC<PageProps> = async ({ params }) => {
                                         <Image
                                             src={`${process.env.UPLOAD_URL}/${post.featured}`}
                                             alt="featured"
-                                            width={100}
-                                            height={100}
+                                            width={500}
+                                            height={500}
                                             className="w-full h-[220px]"
                                         />
                                     </div>
