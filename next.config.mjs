@@ -2,10 +2,15 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: [
-            "localhost",
-            process.env.UPLOAD_URL.match(/(http(?:s)?:\/\/)(.*)/)[2], // Valid Upload Image domain.
-            "mhc9dmh.com",
+        remotePatterns: [
+            {
+                protocol: "https",
+                hostname: "mhc9dmh.com", // if your website has no www, drop it
+            },
+            {
+                protocol: "http",
+                hostname: "localhost",
+            },
         ],
     },
 };
