@@ -1,10 +1,5 @@
-import { FC } from "react";
 
-interface PageProps {
-    content: string
-}
-
-const page: FC<PageProps> = async ({ content: string }: PageProps) => {
+async function About ({ content }: { content: string }) {
     return (
         <div className="wrapper w-full">
             <div className="container">
@@ -13,11 +8,15 @@ const page: FC<PageProps> = async ({ content: string }: PageProps) => {
                 <hr className="mt-2" />
 
                 <div className="row mt-4">
-                    
+                    {content}
                 </div>
             </div>
         </div>
     )
 }
 
-export default page
+export async function getServerStaticProps() {
+    return { props: { content: 'Test!!' }};
+}
+
+export default About;
