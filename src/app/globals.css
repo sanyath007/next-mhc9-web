@@ -197,7 +197,25 @@ footer a { margin-left: 0.25rem; }
 }
 
 .hero {
-    height: calc(100vh - 60px);
+    background: white;
+    /* height: calc(100vh - 150px); */
+    height: calc(100vh - 52px);
+}
+
+.hero .hero-wrapper {
+    overflow: hidden;
+    height: calc(100% - 60px);
+}
+
+.hero .hero-wrapper .slide-wrapper {
+    position: relative;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero .hero-wrapper .slide-wrapper img {
+    width: 100%;
 }
 
 /* Swiper */

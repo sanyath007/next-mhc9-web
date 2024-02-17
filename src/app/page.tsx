@@ -1,5 +1,6 @@
-import SlideLogos from "@/components/SlideLogos";
 import Image from "next/image";
+import SlideLogos from "@/components/SlideLogos";
+import SlideHeros from "@/components/SlideHeros";
 
 export default function Home() {
     return (
@@ -7,15 +8,11 @@ export default function Home() {
             {/* Heros */}
             <div className="hero bg-white relative">
                 {/* Slide Heros */}
-                <section className="border-2 border-red-500 h-full">
-                    <div className="container">
-                        Hero
-                    </div>
-                </section>
+                <SlideHeros />
 
                 {/* Option Menus */}
-                <section className="h-[60px] absolute -bottom-2 w-full bg-gray-100">
-
+                <section className="h-[60px] absolute bottom-0 w-full bg-gray-100 z-999">
+                    <h1>Option Menus</h1>
                 </section>
             </div>
 
