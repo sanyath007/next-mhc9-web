@@ -1,8 +1,12 @@
+import { FC } from "react";
 import Image from "next/image";
 import SlideLogos from "@/components/SlideLogos";
 import SlideHeros from "@/components/SlideHeros";
 
-export default function Home() {
+
+interface PageProps {}
+
+const page: FC<PageProps> = async ({}) => {
     return (
         <div className="wrapper w-full">
             {/* Heros */}
@@ -73,3 +77,5 @@ export default function Home() {
         </div>
     );
 }
+
+export default page

@@ -1,5 +1,8 @@
+import { FC } from "react";
 
-export default function About() {
+interface PageProps {}
+
+const page: FC<PageProps> = async ({}) => {
     return (
         <div className="wrapper w-full">
             <div className="container">
@@ -14,3 +17,5 @@ export default function About() {
         </div>
     )
 }
+
+export default page
