@@ -16,44 +16,54 @@ export default function Home() {
                 </section>
             </div>
 
-            <div className="container">
-                <div className="row mt-4">
-                    <div className="col-md-12 min-h-screen flex flex-col justify-between">
-                        {/* News Headlines */}
-                        <section className="border-2 border-red-500">
-                            {/* News Headlines */}
+            <div className="content">
+                {/* News Headlines */}
+                <section className="">
+                    {/* News Headlines */}
+                    <div className="container min-h-[480px] pt-5">
+                        <h1 className="text-2xl font-bold">News Headlines Section</h1>
 
-                            {/* Director */}
-                        </section>
-
-                        {/* Videos */}
-                        <section className="border-2 border-red-500">
-                            {/* Videos */}
-
-                            {/* Officer Services */}
-                        </section>
-
-                        {/* News */}
-                        <section className="border-2 border-red-500">
-
-                        </section>
-
-                        {/* One pages */}
-                        <section className="border-2 border-red-500">
-
-                        </section>
-
-                        {/* Articles */}
-                        <section className="border-2 border-red-500">
-
-                        </section>
-
-                        {/* E-Services */}
-                        <section className="border-2 border-red-500">
-
-                        </section>
+                        <hr className="mt-2" />
                     </div>
-                </div>
+
+                    {/* Director */}
+                </section>
+
+                {/* Videos */}
+                <section className="">
+                    {/* Videos */}
+                    <div className="container min-h-[480px]">
+                        <h1 className="text-2xl font-bold">Videos Section</h1>
+
+                        <hr className="mt-2" />
+                    </div>
+
+                    {/* Officer Services */}
+                </section>
+
+                {/* News */}
+                <section className="">
+                    <div className="container min-h-[480px]">
+                        <h1 className="text-2xl font-bold">News Section</h1>
+
+                        <hr className="mt-2" />
+                    </div>
+                </section>
+
+                {/* One pages */}
+                <section className="border-2 border-red-500">
+
+                </section>
+
+                {/* Articles */}
+                <section className="border-2 border-red-500">
+
+                </section>
+
+                {/* E-Services */}
+                <section className="border-2 border-red-500">
+
+                </section>
             </div>
 
             {/* Slide Bottom Logos */}
