@@ -1,6 +1,21 @@
+import { FC } from "react";
 
-export default function Login() {
+interface PageProps {}
+
+const page: FC<PageProps> = async ({}) => {
     return (
-        <h1>Login Page</h1>
+        <div className="wrapper w-full">
+            <div className="container">
+                <h1 className="text-2xl font-bold">Login Page</h1>
+
+                <hr className="mt-2" />
+
+                <div className="row mt-4">
+
+                </div>
+            </div>
+        </div>
     )
 }
+
+export default page
