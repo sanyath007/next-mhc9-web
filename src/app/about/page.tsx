@@ -1,5 +1,7 @@
 
-async function About ({ content }: { content: string }) {
+async function About () {
+    const content = 'Test!!';
+
     return (
         <div className="wrapper w-full">
             <div className="container">
@@ -13,10 +15,6 @@ async function About ({ content }: { content: string }) {
             </div>
         </div>
     )
-}
-
-export async function getServerStaticProps() {
-    return { props: { content: 'Test!!' }};
 }
 
 export default About;
