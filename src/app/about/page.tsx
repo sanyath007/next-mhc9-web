@@ -4,7 +4,7 @@ interface PageProps {
     content: string
 }
 
-const page: FC<PageProps> = async ({ content }) => {
+const page: FC<PageProps> = async ({ content: string }: PageProps) => {
     return (
         <div className="wrapper w-full">
             <div className="container">
