@@ -14,7 +14,7 @@ const page: FC<PageProps> = async ({ params }) => {
     const post = await res.json();
 
     return (
-        <section className="w-full">
+        <div className="wrapper w-full">
             <div className="container">
                 <h1 className="text-2xl font-bold">{post.title}</h1>
 
@@ -64,7 +64,7 @@ const page: FC<PageProps> = async ({ params }) => {
                     )}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
 

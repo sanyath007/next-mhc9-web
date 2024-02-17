@@ -5,7 +5,7 @@ export default async function News() {
     const posts = await res.json();
 
     return (
-        <section className="w-full">
+        <div className="wrapper w-full">
             <div className="container">
                 <h1>News Page</h1>
 
@@ -28,6 +28,6 @@ export default async function News() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
     )
 }
